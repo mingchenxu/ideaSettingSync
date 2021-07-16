@@ -1,0 +1,22 @@
+<templateSet group="Mr Xu">
+  <template name="*" value="**  &#10; *    &#10; * describe TODO  &#10; * @author mingchenxu  &#10; * @date $date$ $time$  &#10; * @param $params$  &#10; * @return $returns$  &#10; */ " description="" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="groovyScript(&quot;def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {result+=' * @param ' + params[i] + ((i &lt; params.size() - 1) ? '\\n\\b' : '')}; return result&quot;, methodParameters())" defaultValue="" alwaysStopAt="true" />
+    <variable name="returns" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="**" value="**  &#10; *    &#10; * describe TODO  &#10; * @author mingchenxu  &#10; * @date $date$ $time$  &#10; * @param $params$  &#10; * @return $returns$  &#10; */ " description="" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="returns" expression="groovyScript(&quot;def result = ' * @return : ' + '\\n'; return result;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
