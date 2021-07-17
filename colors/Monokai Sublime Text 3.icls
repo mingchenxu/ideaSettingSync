@@ -614,5 +614,10 @@
         <option name="FOREGROUND" value="bc3f3c" />
       </value>
     </option>
+    <option name="YAML_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="6af544" />
+      </value>
+    </option>
   </attributes>
 </scheme>
