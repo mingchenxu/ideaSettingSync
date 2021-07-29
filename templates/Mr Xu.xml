@@ -28,4 +28,10 @@
       <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
+  <template name="penum" value="   public enum WarnGrade {&#10;        URGENT(&quot;紧急&quot;, 1), HIGH_RISK(&quot;高危&quot;, 2),&#10;        MODERATE_RISK(&quot;中危&quot;, 3), LOW_RISK(&quot;低危&quot;, 4);&#10;&#10;&#10;        private String desc;&#10;&#10;        private int value;&#10;&#10;        WarnGrade(String desc, int value) {&#10;            this.desc = desc;&#10;            this.value = value;&#10;        }&#10;&#10;        public String getDesc() {&#10;            return desc;&#10;        }&#10;&#10;        public int getValue() {&#10;            return value;&#10;        }&#10;&#10;        public static WarnGrade getByValue(int value) {&#10;            for (WarnGrade grade : values()) {&#10;                if (grade.value == value) {&#10;                    return grade;&#10;                }&#10;            }&#10;            // 未匹配到的返回低危&#10;            return LOW_RISK;&#10;        }&#10;    }" description="枚举类快捷键" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
 </templateSet>
