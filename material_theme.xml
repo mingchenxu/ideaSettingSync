@@ -1,9 +1,0 @@
-<application>
-  <component name="MaterialThemeConfig">
-    <option name="premium" value="true" />
-    <option name="accentColor" value="5294e2" />
-    <option name="selectedTheme" value="ARC_DARK" />
-    <option name="userId" value="-27b1c368:17c30390f64:-8000" />
-    <option name="version" value="6.7.2" />
-  </component>
-</application>
