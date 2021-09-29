@@ -24,7 +24,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="foreach" value="for(Class item : Collect) {&#10;    &#10;} " description="遍历集合快捷键" toReformat="false" toShortenFQNames="true">
+  <template name="foreach" value="for(Class item : Collect) {&#10;    DD&#10;} " description="遍历集合快捷键" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
     </context>
