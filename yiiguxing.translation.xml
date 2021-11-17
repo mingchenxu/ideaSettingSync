@@ -1,4 +1,9 @@
 <application>
+  <component name="AppStorage">
+    <histories>
+      <item value="civilized" />
+    </histories>
+  </component>
   <component name="Cache">
     <option name="lastTrimTime" value="1632982254292" />
   </component>
