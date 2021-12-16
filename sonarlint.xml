@@ -1,5 +1,15 @@
 <application>
   <component name="SonarLintGlobalSettings">
+    <option name="sonarQubeServers">
+      <list>
+        <SonarQubeServer>
+          <option name="hostUrl" value="http://10.10.210.19:30009/" />
+          <option name="name" value="10-Sonar" />
+          <option name="login" value="admin" />
+          <password>dfc9dfd0dfcedfd2dfeadf9bdf98df99</password>
+        </SonarQubeServer>
+      </list>
+    </option>
     <rules />
   </component>
 </application>

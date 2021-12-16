@@ -8,6 +8,13 @@
           <option name="organization" value="" />
           <option name="user" value="admin" />
         </SonarServerConfig>
+        <SonarServerConfig>
+          <option name="hostUrl" value="http://10.10.210.19:30009/" />
+          <option name="name" value="10-sonar" />
+          <option name="organization" value="" />
+          <option name="passwordChanged" value="true" />
+          <option name="user" value="admin" />
+        </SonarServerConfig>
       </list>
     </option>
   </component>
