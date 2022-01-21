@@ -1,13 +1,13 @@
 <application>
   <component name="FileTypeManager" version="18">
-    <ignoreFiles list="*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;node-modules;node_moudles;vssver.scc;vssver2.scc;" />
+    <ignoreFiles list="*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;node-modules;node_moudles;vssver.scc;vssver2.scc" />
     <extensionMap>
       <mapping pattern="application-dev.yaml" type="AUTO_DETECTED" />
       <mapping ext="space.kts" type="Kotlin" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
-      <mapping pattern="mixin.styl" type="PLAIN_TEXT" />
       <mapping pattern="auth.js" type="PLAIN_TEXT" />
+      <mapping pattern="mixin.styl" type="PLAIN_TEXT" />
       <mapping pattern="gloablStores.js" type="PLAIN_TEXT" />
       <mapping ext="ymal" type="PLAIN_TEXT" />
       <mapping ext="propeties" type="PLAIN_TEXT" />
@@ -15,7 +15,9 @@
       <mapping ext="ini" type="Properties" />
       <mapping pattern="mixin" type="TypeScript JSX" />
       <mapping pattern="register" type="Vue.js" />
+      <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
       <removed_mapping ext="graphqls" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="psd" approved="true" type="Image" />
     </extensionMap>
   </component>
 </application>
