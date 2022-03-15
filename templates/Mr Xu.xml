@@ -1,5 +1,5 @@
 <templateSet group="Mr Xu">
-  <template name="*" value="**  &#10; *    &#10; * @description: TODO&#10; * @author $USER$&#10; * @date $date$ $time$$param$ $return$&#10; */ " description="java方法注释模板" toReformat="false" toShortenFQNames="true">
+  <template name="*" value="**  &#10; *    &#10; * description: TODO&#10; * @author $USER$&#10; * @date $date$ $time$$param$ $return$&#10; */ " description="java方法注释模板" toReformat="false" toShortenFQNames="true">
     <variable name="USER" expression="user()" defaultValue="" alwaysStopAt="true" />
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
     <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
