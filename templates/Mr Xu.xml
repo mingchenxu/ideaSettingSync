@@ -1,0 +1,38 @@
+<templateSet group="Mr Xu">
+  <template name="*" value="**  &#10; *    &#10; * description: TODO&#10; * @author $USER$&#10; * @date $date$ $time$$param$ $return$&#10; */ " description="java方法注释模板" toReformat="false" toShortenFQNames="true">
+    <variable name="USER" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="groovyScript(&quot;def result = '';def params = \&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {if(params[i] != '')result+='* @param ' + params[i] + ((i &lt; params.size() - 1) ? '\\r\\n ' : '')}; return result == '' ? null : '\\r\\n ' + result&quot;, methodParameters()) " defaultValue="" alwaysStopAt="true" />
+    <variable name="return" expression="groovyScript(&quot;return \&quot;${_1}\&quot; == 'void' ? null : '\\r\\n * @return ' + \&quot;${_1}\&quot;&quot;, methodReturnType()) " defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="**" value="**  &#10; *    &#10; * describe TODO  &#10; * @author mingchenxu  &#10; * @date $date$ $time$  &#10; */ " description="" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="psfl" value="private static Logger logger = LogManager.getLogger($CLASS_NAME$.class);" description="日志快捷键" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="for(Class item : Collect) {&#10;    &#10;} " description="遍历集合快捷键" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="penum" value="public enum Status {&#10;    URGENT(1, &quot;紧急&quot;), HIGH_RISK(2, &quot;高危&quot;),&#10;    MODERATE_RISK(3, &quot;中危&quot;), LOW_RISK(4, &quot;低危&quot;);&#10;    &#10;    private int value;&#10;&#10;    private String desc;&#10;&#10;    Status(int value, String desc) {&#10;        this.desc = desc;&#10;        this.value = value;&#10;    }&#10;&#10;    public String getDesc() {&#10;        return desc;&#10;    }&#10;&#10;    public int getValue() {&#10;        return value;&#10;    }&#10;&#10;    public static Status getByValue(int value) {&#10;        for (Status grade : values()) {&#10;            if (grade.value == value) {&#10;                return grade;&#10;            }&#10;        }&#10;        return LOW_RISK;&#10;    }&#10;}" description="枚举类快捷键" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>
