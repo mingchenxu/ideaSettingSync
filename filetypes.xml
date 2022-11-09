@@ -6,9 +6,9 @@
       <mapping ext="space.kts" type="Kotlin" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
+      <mapping pattern="auth.js" type="PLAIN_TEXT" />
       <mapping pattern="mixin.styl" type="PLAIN_TEXT" />
       <mapping pattern="gloablStores.js" type="PLAIN_TEXT" />
-      <mapping pattern="auth.js" type="PLAIN_TEXT" />
       <mapping ext="ymal" type="PLAIN_TEXT" />
       <mapping ext="propeties" type="PLAIN_TEXT" />
       <mapping ext="woff" type="PLAIN_TEXT" />
