@@ -14,10 +14,10 @@
       <mapping ext="woff" type="PLAIN_TEXT" />
       <mapping ext="ini" type="Properties" />
       <mapping pattern="mixin" type="TypeScript JSX" />
-      <mapping pattern="register" type="Vue.js" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
       <removed_mapping ext="graphqlconfig" approved="true" type="JSON" />
       <removed_mapping ext="psd" approved="true" type="Image" />
+      <mapping pattern="register" type="Vue.js" />
     </extensionMap>
   </component>
 </application>
