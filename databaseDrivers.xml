@@ -3,7 +3,7 @@
     <driver id="mysql.8">
       <artifact />
       <library>
-        <url>file://D:/tools/mysql-connector-java-8.0.26.jar</url>
+        <url>file://$USER_HOME$/Developer/workspace/tools/mysql-connector-j-8.0.32.jar</url>
       </library>
     </driver>
     <driver id="oracle.19">
