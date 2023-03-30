@@ -11,6 +11,7 @@
       <mapping pattern="gloablStores.js" type="PLAIN_TEXT" />
       <mapping ext="ymal" type="PLAIN_TEXT" />
       <mapping ext="propeties" type="PLAIN_TEXT" />
+      <mapping ext="drt" type="PLAIN_TEXT" />
       <mapping ext="woff" type="PLAIN_TEXT" />
       <mapping ext="ini" type="Properties" />
       <mapping pattern="mixin" type="TypeScript JSX" />
