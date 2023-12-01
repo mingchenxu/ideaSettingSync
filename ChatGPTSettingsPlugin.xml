@@ -1,0 +1,31 @@
+<application>
+  <component name="com.obiscr.chatgpt.settings.OpenAISettingsState">
+    <option name="apiKey" value="sk-J5CX3WigjqA4JDRg9a29D5B8Bb174b26Be0b1416913986E5" />
+    <option name="gpt35Model" value="gpt-4" />
+    <option name="gpt35TurboUrl" value="https://api.gptapi.us/v1/chat/completions" />
+    <option name="enableCustomizeGpt35TurboUrl" value="true" />
+    <contentStatesAll>
+      <list>
+        <ChatGPTContentState>
+          <enable>true</enable>
+          <content>EasyCode</content>
+        </ChatGPTContentState>
+        <ChatGPTContentState>
+          <order>1</order>
+          <enable>true</enable>
+          <content>ChatGPT</content>
+        </ChatGPTContentState>
+        <ChatGPTContentState>
+          <order>2</order>
+          <enable>true</enable>
+          <content>GPT-3.5-Turbo</content>
+        </ChatGPTContentState>
+        <ChatGPTContentState>
+          <order>3</order>
+          <enable>true</enable>
+          <content>Online ChatGPT</content>
+        </ChatGPTContentState>
+      </list>
+    </contentStatesAll>
+  </component>
+</application>
